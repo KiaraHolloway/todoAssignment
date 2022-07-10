@@ -13,8 +13,18 @@
 
  <div class="container"> 
     <h1 class="display-2">Welcome to Your To Do list!</h1>
+
+    <div class="row md-6">
+      <div class="col-lg-4">
+      {{> loginButtons}}
+      </div>
+    </div>
+
+    {{>profFilter}}
     
     {{> addtask}}
+    {{> listTasks}}
+   
   
 </div> 
 

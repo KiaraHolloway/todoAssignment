@@ -7,7 +7,12 @@ import './addtask/addtask.html';
 import './addtask/addtask.js';
 import './main.html';
 import '../lib/collection.js';
-
+// import './login/login.html';
+// import './login/login.js';
+import './listTask/listTask.html';
+import './listTask/listTask.js';
+import './profFilter/profFilter.html';
+import './profFilter/profFilter.js';
 
 
 
