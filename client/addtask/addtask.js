@@ -5,6 +5,4 @@ Template.addtask.events ({
 
 
 
-
-    
-})
+});
