@@ -1,0 +1,18 @@
+<template name = "login">
+
+    <div class="row mb-3">
+        <div class="col-xl-4">
+          
+          {{#if currentUser}}
+          <button class="btn btn-primary ms-2 js-logout" type="button">
+          <span class="addBtnSize">LogOut</span>
+        </button>
+
+        {{else}}
+        {{> atForm}}
+          {{/if}}
+
+        </div>
+    </div>
+
+</template>
