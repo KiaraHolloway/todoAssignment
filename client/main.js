@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './addtask/addtask.html';
 import './addtask/addtask.js';
 import './main.html';
-
+import'../lib/collection.js';
 
 
 
