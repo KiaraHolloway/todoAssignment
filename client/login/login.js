@@ -1,7 +1,8 @@
 Template.login.events ({
 
-    'click js-logout' () {
+    'click .js-logout' () {
         AccountsTemplates.logout ();
+        console.log ("logout")
     }
 
 });

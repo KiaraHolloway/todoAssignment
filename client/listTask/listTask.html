@@ -1,9 +1,11 @@
 <template name="listTasks">
     <div class="row my-5">
         <div class="col-xl-6 listTextSize">
-            <ul class="list-group">
+            <ul class="list-group mb-0">
                 {{#each theTasks}}
-                <li class="list-group-item">{{task}}</li>
+                <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded" style="background-color: #f4f6f7;">
+                    <input class="form-check-input me-2" type="checkbox" value="" aria-label="..."  />
+                  <span>{{task}}</span></li>
                 {{/each}}
             </ul>
         </div>

@@ -1,13 +1,19 @@
 Template.addtask.events ({
     'click #js-add' (){
-       let newtask = $("#newtask").val();
-      tododb.insert({
-        "task": newtask
-      })
-        $("#newtask").val("");
-    },
+       let newTask = $("#newTask").val();
+       if (validateTask(newTask)) {
+            tododb.insert({
+                "task": newTask
+            });
+                $("#newTask").val("");
+    }
+},
 
-
+    'keypress #newTask'(event){
+        if(event.keyCode == 13) {
+                addNewTask();
+            }
+        },
 
     'click .privateTask'() {
         if ($(".fa-xmark").hasClass("d-none")) {
@@ -28,6 +34,15 @@ Template.addtask.events ({
         }
     
     });
-    }
+    },
 
 });
+
+        let validateTask = (task) => {
+            let valid = true;
+            if (task == "") {
+                console.log("Cannot be empty");
+                valid = false;
+            }
+            return valid;
+        }

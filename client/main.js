@@ -3,11 +3,12 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import bootstrap from 'bootstrap';
 import { createPopper } from '@popperjs/core';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './addtask/addtask.html';
-import './addtask/addtask.js';
-import './main.html';
 import '../lib/collection.js';
 import '../lib/userAccts.js';
+
+import './main.html';
+import './addtask/addtask.html';
+import './addtask/addtask.js';
 import './login/login.html';
 import './login/login.js';
 import './listTask/listTask.html';
@@ -21,20 +22,3 @@ import './profFilter/profFilter.js';
 
 
 
-// Template.hello.onCreated(function helloOnCreated() {
-//   // counter starts at 0
-//   this.counter = new ReactiveVar(0);
-// });
-
-// Template.hello.helpers({
-//   counter() {
-//     return Template.instance().counter.get();
-//   },
-// });
-
-// Template.hello.events({
-//   'click button'(event, instance) {
-//     // increment the counter when button is clicked
-//     instance.counter.set(instance.counter.get() + 1);
-//   },
-// });
