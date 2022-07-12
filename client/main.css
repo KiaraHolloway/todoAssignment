@@ -23,6 +23,6 @@ body {
   .taskDelete, 
   .taskRestore{
     float: right;
+    cursor: pointer;
   }
 
-  

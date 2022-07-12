@@ -13,5 +13,12 @@ Template.trashBinn.events({
             }
 
         })
-    }
+    },
+
+        'click .js-deleteThis'() {
+            let taskID = this._id;
+        tododb.remove({ _id:taskID})
+        }
+
+
 });

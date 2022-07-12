@@ -10,16 +10,17 @@
               </p>
 
               <div class="collapse" id="collapseTrashBin">
+                <h1>Your Trash Bin</h1>
                 <ul class="list-group mb-0">
                     {{#each theTasks}}
                     <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded" style="background-color: #f4f6f7;">
                         <input class="form-check-input me-2" type="checkbox" value="" aria-label="..."  />
                       <span>{{task}}</span>
-                      <div class="taskRestore">
+                      <div class="taskRestore ">
                         <i class="fa-solid fa-recycle js-trashRestore"></i>
                       </div>
-                      <div class="taskDelete">
-                        <i class="fa-regular fa-trash-can js-trashThis"></i>
+                      <div class="taskDelete ">
+                        <i class="fa-regular fa-trash-can js-deleteThis"></i>
                     </div>
                     </li>
                       
