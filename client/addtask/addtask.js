@@ -3,7 +3,9 @@ Template.addtask.events ({
        let newTask = $("#newTask").val();
        if (validateTask(newTask)) {
             tododb.insert({
-                "task": newTask
+                "task": newTask,
+                "private" : $(".fa-xmark").hasClass("d-none"),
+                "trashBin": false
             });
                 $("#newTask").val("");
     }
@@ -11,7 +13,14 @@ Template.addtask.events ({
 
     'keypress #newTask'(event){
         if(event.keyCode == 13) {
-                addNewTask();
+            let newTask = $("#newTask").val();
+            if (validateTask(newTask)) {
+                tododb.insert({
+                    "task": newTask
+                });
+                    $("#newTask").val("");
+        }
+
             }
         },
 
@@ -40,8 +49,10 @@ Template.addtask.events ({
 
         let validateTask = (task) => {
             let valid = true;
+            $("#newTask").removeClass("errorBox");
             if (task == "") {
                 console.log("Cannot be empty");
+                $("#newTask").addClass("errorBox");
                 valid = false;
             }
             return valid;

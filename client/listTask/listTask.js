@@ -1,6 +1,6 @@
 Template.listTasks.helpers({
     theTasks() {
-        return tododb.find();
+        return tododb.find({"trashBin":false});
     }
 });
 

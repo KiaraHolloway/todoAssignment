@@ -15,6 +15,8 @@ import './listTask/listTask.html';
 import './listTask/listTask.js';
 import './profFilter/profFilter.html';
 import './profFilter/profFilter.js';
+import './trashBin/trashBin.html';
+import './trashBin/trashBin.js';
 
 
 
