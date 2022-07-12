@@ -5,7 +5,7 @@ Template.listTasks.helpers({
 });
 
 Template.listTasks.events({
-        'click .js-trashthis'(){
+        'click .js-trashThis'(){
             let taskID = this._id;
             tododb.update({ _id:taskID},{
                 $set:{
