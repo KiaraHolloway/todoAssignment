@@ -26,3 +26,6 @@ body {
     cursor: pointer;
   }
 
+.colourbox{
+  background-color: #0029ff !important;
+}
